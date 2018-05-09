@@ -33,3 +33,8 @@ firewall-cmd --zone-publci --add-port=9001/tcp --permanent
 #重新加载防火圈配置，使得刚才配置的配置生效
 firewall-cmd --reload
 ```
+nodejs环境支撑 mqtt包
+安装方法
+```
+npm install mqtt
+```
