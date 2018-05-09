@@ -16,3 +16,12 @@
 之前考虑过的备选方案  
 
 MQTT之配置文件内容：见项目配置目录下的[mosquito.conf](../mosquitto.conf) 
+
+mosquitto.conf文件存放在服务器的/web/docker/mqtt/目录下
+进入该目录后使用docker命令启动mqtt服务，
+```
+#停止mqtt服务并删除mqtt容器
+docker stop mqtt && docker rm mqtt
+#启动mqtt的docker服务，并同时开启1883和9001端口用于socket链接和websocket链接
+docker run -d --name mqtt --restart=always -p 1883:1883 -p 9001:9001 -v /web/docker/mqtt:/mosquitto/config eclipse-mosquitto
+```
