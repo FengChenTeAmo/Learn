@@ -25,3 +25,11 @@ docker stop mqtt && docker rm mqtt
 #启动mqtt的docker服务，并同时开启1883和9001端口用于socket链接和websocket链接
 docker run -d --name mqtt --restart=always -p 1883:1883 -p 9001:9001 -v /web/docker/mqtt:/mosquitto/config eclipse-mosquitto
 ```
+firewall防火墙操作命令
+```
+#配置添加1883和9001的端口开放
+firewall-cmd --zone=public --add-port=1883/tcp --permanent
+firewall-cmd --zone-publci --add-port=9001/tcp --permanent
+#重新加载防火圈配置，使得刚才配置的配置生效
+firewall-cmd --reload
+```
