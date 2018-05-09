@@ -38,3 +38,7 @@ nodejs环境支撑 mqtt包
 ```
 npm install mqtt
 ```
+在src/api目录下创建mqtt.ts文件
+文件内容见(mqtt.ts)[../mqtt.ts]文件
+
+在src/main.ts中引入mqtt.ts做后续操作就行了
