@@ -15,7 +15,6 @@
     <Upload
         ref="upload"
         :show-upload-list="false"
-        :default-file-list="defaultList"
         :on-success="handleSuccess"
         :format="['jpg','jpeg','png','gif']"
         :max-size="4096"
