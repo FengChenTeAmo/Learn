@@ -1,0 +1,58 @@
+大规则：
+1、除非必要(第三方、第四方调用，Word/Excel等面向用户自定义的内容部分)，否则不要用中文，
+2、禁止使用拼音，
+3、
+
+变量命名：
+1、局部变量：首字母大写驼峰法，如UserName，CheckOut
+2、参数变量：首字母大写驼峰法，如UserName，CheckOut
+3、属性变量：首字母大写驼峰法，如UserName，CheckOut
+4、临时变量：tmp打头驼峰法
+
+方法命名：
+1、首字母小写驼峰法，如afterSearch，addOrder
+2、私有、受保护的方法添加_在前，如_afterSearch
+类命名
+1、首字母大写驼峰法
+函数命名:
+1、全小写下划线分割，如check_out,range_out
+目录规范：
+服务端：
+├── dist
+├── node_modules
+├── package.json
+├── README.md
+├── src
+│   └── index.ts
+└── tsconfig.json
+前端：
+├── build
+│   └── webpack.config.js
+├── dist
+├── index.html
+├── node_modules
+├── package.json
+├── README.md
+├── src
+│   ├── api
+│   ├── assets
+│   │   ├── css
+│   │   └── img
+│   ├── components
+│   │   └── XXX.vue
+│   ├── main.ts
+│   ├── router
+│   │   └── index.ts
+│   └── store
+│       ├── index.ts
+│       └── modules
+│           └── User.ts
+└── tsconfig.json
+HTML编写规范
+Vue文件编写规范
+Vuex文件编写规范
+Router文件编写规范
+Api文件编写规范
+Controller文件编写规范
+Db文件编写规范
+Relation文件编写规范
